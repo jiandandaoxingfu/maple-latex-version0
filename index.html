@@ -1,0 +1,59 @@
+<!doctype html>
+<!--  
+ 	@author JMx
+ 	date  2018-1-24
+ 	网页版latex
+ -->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>latex</title>
+		<meta name="viewport"
+ 			content="height = 600px,
+ 					width = 1360px,
+ 					initial-scale=0.5,
+ 					minimum-scale=0.3,
+ 					maxmum-scale=1.0,
+ 					user-scalable=no"/>
+		<script type="text/x-mathjax-config">
+      		MathJax.Hub.Config({
+        	tex2jax: {inlineMath: [['$','$']]},
+        	"HTML-CSS": 
+          	{scale: 80},
+        	TeX: { equationNumbers: { autoNumber: "AMS" }}});
+   		</script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/
+			MathJax.js?config=TeX-AMS-MML_HTMLorMML">		
+		</script>
+		<link rel='stylesheet' href='file/latex.css'/>
+		<script type="text/javascript" src='file/cursor.js'></script>
+		
+	</head>
+	
+	<body>				
+		<div id='edit_area'>
+			<div id='menu_area'>
+				<ul id='menu'>
+					<li><button class='menu_btn' index='1'>&nbsp;&nbsp;Math&nbsp;&nbsp;</button></li>
+					<li><button class='menu_btn' index='2'>&nbsp;&nbsp;Greek&nbsp;&nbsp;</button></li>
+					<li><button class='menu_btn' index='3'>Symbols</button></li>
+					<li><button class='menu_btn' index='4'>Functions(x)</button></li>
+					<li><button class='menu_btn' index='5'>{} ...&nbsp;&nbsp;</button></li>
+					<li><button class='menu_btn' index='6'>&nbsp;&nbsp;<>=...</button></li>
+					<li><button class='menu_btn' index='7'>+/-...</button></li>
+					<li><button class='menu_btn' index='8'>--->...</button></li>
+					<li><button class='menu_btn' index='9'>&nbsp;&nbsp;AMS&nbsp;&nbsp;</button></li>
+					<li><button class='menu_btn' index='10'>AMS =<>&nbsp;&nbsp;</button></li>
+					<li><button class='menu_btn' index='11'>AMS NOT=<></button></li>
+				</ul>	
+				<ul id='sub_menu'></ul>	
+				<ul id='punctuation'></ul>
+			</div>
+			<textarea id='input' placeholder="文本框(支持latex数学公式代码):" onkeyup='show();'></textarea>
+		</div>	
+		<div id='output'></div>	
+		<script type="text/javascript" src='file/latex.js'></script>
+	</body>
+</html>
+
